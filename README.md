@@ -1,7 +1,7 @@
 #HomeKeeper
 ==========
 
-##CIS 542 project
+###CIS 542 project
 
-##Reference
-[reference link](http://danqun.blogspot.com/)
+###Reference
+[Dan Qun HomGuard](http://danqun.blogspot.com/)
