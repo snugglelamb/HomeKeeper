@@ -9,8 +9,46 @@
     tools:context="cis542.finalproject.homekeeper.Status_overview" >
 
     <TextView
+        android:id="@+id/standard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+    
+    <Button
+        android:id="@+id/Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop ="50dp"
+        android:layout_marginLeft ="50dp"
+        android:layout_below="@id/standard"
+        android:text="@string/Temper" />
+    
+    <Button
+        android:id="@+id/Noise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft ="@id/Temp"
+        android:layout_marginTop ="50dp"
+        android:layout_below="@id/Temp"
+        android:text="@string/Noise" />
+    
+    <Button
+        android:id="@+id/Lightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft ="@id/Temp"
+        android:layout_marginTop ="50dp"
+        android:layout_below="@id/Noise"
+        android:text="@string/Light" />
+   
+    <Button
+        android:id="@+id/Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft ="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/go_setting" />
+    
+    
 
 </RelativeLayout>

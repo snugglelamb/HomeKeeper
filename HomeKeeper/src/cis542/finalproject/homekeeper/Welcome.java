@@ -1,10 +1,10 @@
 package cis542.finalproject.homekeeper;
 
 import cis542.finalproject.homekeeper.util.SystemUiHider;
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -125,11 +125,11 @@ public class Welcome extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				
-				
-				
+				Intent intent = new Intent();
+				intent.setClass(Welcome.this, Status_overview.class);
+				Welcome.this.startActivity(intent);
+				finish();
 			}
-			
 		});
 		
 	}
