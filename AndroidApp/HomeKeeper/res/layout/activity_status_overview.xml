@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context="cis542.finalproject.homekeeper.Status_overview" >
+
+
+    
+
+     <ImageView 
+        	android:id="@+id/visualimage"
+       		android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_alignParentTop="true"
+        	android:contentDescription="@string/back_ground"
+        	android:gravity="bottom"
+        	android:src="@drawable/asd"
+        	android:paddingTop="0dip"
+        />  
+    
+    
+        
+     <TextView
+        android:id="@+id/visual_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop ="130dp"
+        android:layout_marginLeft ="50dp"
+        android:textColor ="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/visual_brief"
+      />
+      
+    
+    
+    <Button
+        android:id="@+id/Visuals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft ="@id/visual_brief"
+        android:layout_below ="@id/visual_brief"
+        android:layout_marginTop ="20dp"
+        android:textColor ="#ffffff"
+        android:textSize="30sp"
+        android:text="@string/go_visual" />
+    
+    <RadioGroup
+        	android:id="@+id/myradiogroup"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/Visuals"
+        	android:layout_alignTop="@id/Visuals"
+        	android:layout_marginLeft="40dp"
+        	android:textColor ="#ffffff"
+        	android:textSize="30sp"
+        	android:orientation="vertical">
+
+        	<RadioButton
+            	android:id="@+id/Temper_select"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/Temper"           	        	
+            	android:checked="true"
+                android:textColor ="#ffffff"
+            	android:textSize="30sp" />
+
+        	<RadioButton
+        	    android:id="@+id/Distance_select"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="@string/distance"
+        	    android:textColor ="#ffffff"
+        	    android:textSize="30sp" />
+        	
+        	<RadioButton
+        	    android:id="@+id/Light_select"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="@string/Light"
+        	    android:textColor ="#ffffff"
+        	    android:textSize="30sp" />
+
+    	</RadioGroup>
+    
+    
+    
+    <TextView
+        android:id="@+id/setting_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft ="50dp"
+       	android:layout_marginTop="200dp"
+        android:layout_below="@id/Visuals"
+        android:textColor ="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/setting_brief" />
+    
+   
+    <Button
+        android:id="@+id/Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft ="@id/Visuals"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/setting_brief"
+        android:textColor ="#ffffff"
+        android:textSize="30sp"
+        android:text="@string/go_setting" />
+    
+   
+    
+   
+
+</RelativeLayout>
