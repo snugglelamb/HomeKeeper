@@ -10,6 +10,7 @@ The aim is to build a remote home monitor system that could be accessed by user 
 ![alt text][system]
 [system]: https://github.com/snugglelamb/HomeKeeper/blob/master/screenshot/p0.png "System Structure"
 
+
 **Hardware**
 * Hardwares to be setted up at home include a raspberry pi with wifi dongle, an Arduino DUE board, a thermometer, a dimmer and a distance sensor.
 
@@ -21,13 +22,14 @@ The aim is to build a remote home monitor system that could be accessed by user 
 
 **App Screenshot**
 
-![alt text][p1]
+|                |                |
+|:--------------:| --------------:|
+|![alt text][p1] |![alt text][p2] |
+| ![alt text][p3]|![alt text][p4] |
+
 [p1]: https://github.com/snugglelamb/HomeKeeper/blob/master/screenshot/p1.png "p1"
-![alt text][p2]
 [p2]: https://github.com/snugglelamb/HomeKeeper/blob/master/screenshot/p2.png "p2"
-![alt text][p3]
 [p3]: https://github.com/snugglelamb/HomeKeeper/blob/master/screenshot/p3.png "p3"
-![alt text][p4]
 [p4]: https://github.com/snugglelamb/HomeKeeper/blob/master/screenshot/p4.png "p4"
 
 ##Steps to setup
