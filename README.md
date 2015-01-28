@@ -66,8 +66,29 @@ The aim is to build a remote home monitor system that could be accessed by user 
     In order to build and run the server, we follow the instructions in the following link, basically we setuped the emonhub as mediator between sensor hardware and emoncms server, setted up the website using php, and created scripts to enable and disable local emoncms server. The example of local server webpage is shown on the right. [Official ReadMe](https://github.com/emoncms/emoncms/blob/bufferedwrite/docs/install.md)
 
 * Set Arduino on Pi
+
     In order to listen Arduino output via serial port on raspberry pi, we compiled and loaded the following linux kernel modules (cdc­acm, usbserial, ftdi_sio), which could be found in the pi’s root directory. The source codes were adapted locally from online source http://openenergymonitor.org/emon/node/488 on emoncs forum.
 
 * Setup Python DAQ
+
     First enable the local server via localemoncms­enable.
     Then run the python DAQ program "read_data_internet.py" under script directory, which is designed for data logging into cloud server held by emoncms.org, so that the data could be fetched as long as the pi is connected to internet. The "read_data_local.py" is written for data logging into the local server and database. 
+
+
+## Android
+
+* Summary
+
+    The Android application in the system basically serves as the user interface. 
+    Functionalities includes: monitoring the temperature/lightness/distance variables at home via the Emoncms Cloud, Visualization of the factors with respect to a period of time and capable of communicating with the server in order to modify the alarm conditions.
+
+* Read and write value from data nodes on server
+    
+    The Android program utilized the HttpUrlconnection class to conduct http get and http post methods. Also it has a pair of apikeys associated with the same account on the server side (emoncms cloud server) to send requests and receive response. 
+
+* Visualization
+
+    The visualization functionality is achieved following the instructions in the link below.
+https://github.com/openenergymonitor/documentation/blob/master/BuildingBlocks/AndroidApp/AndroidAppPart2.md
+The method provided on the web is basically refresh the contentview of the current activity and replace it with a manually painted canvas. The Android application of the system maintains a special thread that retrieves a variable status every second and refresh the UI with the new data accordingly.
+
